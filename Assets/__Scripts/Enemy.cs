@@ -55,6 +55,7 @@ public class Enemy : MonoBehaviour
         if ( otherGO.GetComponent<ProjectileHero>() != null ) {
             Destroy( otherGO );     // Destroy the Projectile
             Destroy( gameObject );  // Destroy this Enemy GameObject
+            Main.ENEMY_DIED();
         } else {
             Debug.Log( "Enemy hit by non-ProjectileHero: " + otherGO.name );
         }

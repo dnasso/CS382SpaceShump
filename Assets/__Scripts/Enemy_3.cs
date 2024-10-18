@@ -56,9 +56,10 @@ public class Enemy_3 : Enemy
 
     void DrawDebug() {
         // Draw the three points
+        // This function absolutely isn't working for me
         Debug.DrawLine( points[0], points[1], Color.cyan, lifeTime );
         Debug.DrawLine( points[1], points[2], Color.yellow, lifeTime );
-        print("Drawing");
+        //print("Drawing");
 
         // Draw the Bezier Curve
         float numSections = 20;

@@ -71,6 +71,7 @@ public class Hero : MonoBehaviour
         if (enemy != null) {    // If the shield was triggered by an enemy
             shieldLevel--;      // Decrease the level of the shield by 1
             Destroy(go);        // _ and Destroy the enemy
+            Main.ENEMY_DIED();
         } else {
             Debug.LogWarning("Shield trigger hit by non-Enemy: "+go.name);
         }
